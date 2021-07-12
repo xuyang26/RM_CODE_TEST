@@ -61,8 +61,8 @@ int main()
 							  //rand()是产生随机数-32768--32768之间的随机数 ，因为要求的随机数不能大于255，所以有rand（）&255操作
 
 	/*************************************查找凸包并绘制凸包******************/
-	//convexHull(contours[i], hull[i], false);
-	//drawContours(dstImage, hull, i, color, 3, 8, hierarchy,0,Point());//凸包属于一种特殊的轮廓因此画凸包还是使用drawContours函数
+	convexHull(contours[i], hull[i], false);
+	drawContours(dstImage, hull, i, color, 3, 8, hierarchy,0,Point());//凸包属于一种特殊的轮廓因此画凸包还是使用drawContours函数
 	}
 	putText(dstImage, "RM", Point(50, 60), FONT_HERSHEY_COMPLEX, 2, Scalar(255, 255, 255), 4, 8);
 	imshow("轮廓图", dstImage);
