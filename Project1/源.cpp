@@ -66,6 +66,7 @@ int main()
 	}
 	putText(dstImage, "RM", Point(50, 60), FONT_HERSHEY_COMPLEX, 2, Scalar(255, 255, 255), 4, 8);
 	imshow("轮廓图", dstImage);
+	//第三次提交测试
 
 	waitKey(0);
 	return 0;
